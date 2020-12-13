@@ -1,0 +1,7 @@
+a.navbar-brand:hover {
+    cursor: pointer;
+}
+
+a.nav-link:hover {
+    cursor: pointer;
+}

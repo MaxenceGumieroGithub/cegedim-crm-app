@@ -1,0 +1,46 @@
+{
+  "customers": [
+    {
+      "id": "customer0",
+      "firstName": "Mario",
+      "lastName": "Bros",
+      "orders": [
+        "order1"
+      ]
+    },
+    {
+      "id": "customer1",
+      "firstName": "Luigi",
+      "lastName": "Bros",
+      "orders": [
+        "order2"
+      ]
+    },
+    {
+      "id": "customer2",
+      "firstName": "Geralt",
+      "lastName": "De Riv",
+      "orders": [
+        "order3",
+        "order4"
+      ]
+    },
+    {
+      "id": "customer3",
+      "firstName": "Cloud",
+      "lastName": "Strife",
+      "orders": [
+        "order4"
+      ]
+    }
+  ],
+  "invoices": [
+    {}
+  ],
+  "orders": [
+    {}
+  ],
+  "products": [
+    {}
+  ]
+}
