@@ -4,8 +4,10 @@ const ProductItemComponent = (product) => {
 
   /* Ajoute au contenu HTML de la div portant l'ID router le contenu suivant : */
   document.querySelector('#router').innerHTML += `
-    <p>ProductItemComponent</p>
-  `
+    <button class='btn btn-dark m-1' id='productDetailsNavLink_${ product.id }'>
+      ${ product.name }
+    </button>
+   `
 }
 
 export default ProductItemComponent

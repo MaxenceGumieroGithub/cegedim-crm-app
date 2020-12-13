@@ -5,7 +5,8 @@
       "firstName": "Mario",
       "lastName": "Bros",
       "orders": [
-        "order0"
+        "order0",
+        "order1"
       ]
     },
     {
@@ -13,7 +14,7 @@
       "firstName": "Luigi",
       "lastName": "Bros",
       "orders": [
-        "order1"
+        "order2"
       ]
     },
     {
@@ -21,8 +22,8 @@
       "firstName": "Geralt",
       "lastName": "De Riv",
       "orders": [
-        "order2",
-        "order3"
+        "order3",
+        "order4"
       ]
     },
     {
@@ -30,7 +31,7 @@
       "firstName": "Cloud",
       "lastName": "Strife",
       "orders": [
-        "order4"
+        "order5"
       ]
     }
   ],
@@ -39,15 +40,101 @@
   ],
   "orders": [
     {
-      "id": "customer0",
-      "firstName": "Mario",
-      "lastName": "Bros",
-      "orders": [
-        "order0"
+      "id": "order0",
+      "date": "03/01/2019",
+      "customer": "customer0",
+      "products": [
+        "product0",
+        "product0",
+        "product0",
+        "product0",
+        "product0",
+        "product1"
+      ]
+    },
+    {
+      "id": "order1",
+      "date": "25/03/2019",
+      "customer": "customer0",
+      "products": [
+        "product0",
+        "product0",
+        "product0",
+        "product1"
+      ]
+    },
+    {
+      "id": "order2",
+      "date": "11/11/2019",
+      "customer": "customer1",
+      "products": [
+        "product2"
+      ]
+    },
+    {
+      "id": "order3",
+      "date": "23/05/2020",
+      "customer": "customer2",
+      "products": [
+        "product3"
+      ]
+    },
+    {
+      "id": "order4",
+      "date": "15/08/2020",
+      "customer": "customer2",
+      "products": [
+        "product3",
+        "product4"
+      ]
+    },
+    {
+      "id": "order5",
+      "date": "21/08/2020",
+      "customer": "customer3",
+      "products": [
+        "product5",
+        "product6",
+        "product6",
+        "product6"
       ]
     }
   ],
   "products": [
-    {}
+    {
+      "id": "product0",
+      "name": "Super champignon",
+      "price": 24.99
+    },
+    {
+      "id": "product1",
+      "name": "Étoile",
+      "price": 99999.99
+    },
+    {
+      "id": "product2",
+      "name": "Aspirateur Poltergust G/00",
+      "price": 499.99
+    },
+    {
+      "id": "product3",
+      "name": "Épée en argent",
+      "price": 1124.99
+    },
+    {
+      "id": "product4",
+      "name": "Armure Nilfgaardienne",
+      "price": 2449.99
+    },
+    {
+      "id": "product5",
+      "name": "Épée broyeuse",
+      "price": 349.99
+    },
+    {
+      "id": "product6",
+      "name": "Queue de phénix",
+      "price": 119.99
+    }
   ]
 }

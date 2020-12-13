@@ -23,15 +23,27 @@ const OrderListPage = () => {
     getOrders().map(order => {
       OrderItemComponent(order)
     })
+    document.querySelector('#router').innerHTML += `  
+      <hr>
+      <button class='btn btn-dark m-1' id='homePageButton'>Retour à l'accueil</button>
+    `
 
     /* Cette fonction permet d'assigner les fonctions setCurrentRoute et setOrder à chaque bouton du composant de
-    fonction HeaderComponent. Ces fonctions sont répétées dans différents composants. Il est nécessaire de faire une
+    fonction OrderListPage. Ces fonctions sont répétées dans différents composants. Il est nécessaire de faire une
     seconde boucle pour éviter que la fonction d'ajout d'évènement au clic soit écrasée à chaque nouvelle itération. */
     getOrders().map(order => {
-      document.querySelector(`#orderDetailsNavLink_${ order.id }`).addEventListener('click', () => {
-        setCurrentRoute('order-details')
-        setOrder(order.id, () => { OrderDetailsPage(order.id) })
-      })
+      document.querySelector(`#orderDetailsNavLink_${ order.id }`)
+        .addEventListener('click', () => {
+          setOrder(order.id, () => { setCurrentRoute('order-details') })
+        })
+    })
+
+    /* Cette fonction permet d'assigner la fonction setCurrentRoute interagissant avec le state global de
+    l'application avec le paramètre souhaité au bouton du composant de fonction OrderListPage. Ces fonctions sont
+    répétées dans différents composants. L'intérêt est de scoper ces fonctions à ce composant de fonction et de ne pas
+    propager ces fonctions aux autres composants de fonction. */
+    document.querySelector('#homePageButton').addEventListener('click', () => {
+      setCurrentRoute('home')
     })
   })
 }

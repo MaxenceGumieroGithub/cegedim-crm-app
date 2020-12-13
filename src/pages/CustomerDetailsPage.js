@@ -9,6 +9,7 @@ const CustomerDetailsPage = () => {
     <h1>Détail client</h1>
     <hr>
     <h2>${ getCustomer().firstName } <span class='text-uppercase'>${ getCustomer().lastName }</span></h2>
+    <p>Total de commandes effectuées : ${ getCustomer().orders.length }</p>
   `
 }
 

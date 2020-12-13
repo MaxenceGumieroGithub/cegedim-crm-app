@@ -4,8 +4,10 @@ const OrderItemComponent = (order) => {
 
   /* Ajoute au contenu HTML de la div portant l'ID router le contenu suivant : */
   document.querySelector('#router').innerHTML += `
-    <p>OrderItemComponent</p>
-  `
+    <button class='btn btn-dark m-1' id='orderDetailsNavLink_${ order.id }'>
+      Le ${ order.date }, ${ order.products.length } article(s)
+    </button>
+   `
 }
 
 export default OrderItemComponent
