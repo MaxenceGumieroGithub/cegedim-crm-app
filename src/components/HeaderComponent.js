@@ -1,3 +1,4 @@
+/* Importe certaines actions liées au state global de l'application. */
 import { setCurrentRoute } from '../store/actions/routesActions.js'
 
 const HeaderComponent = () => {
@@ -6,7 +7,7 @@ const HeaderComponent = () => {
   document.querySelector('#header').innerHTML = `
     <nav class='navbar navbar-expand-lg navbar-light bg-secondary shadow mb-3'>
       <div class='container'>
-        <a class='navbar-brand' id='homePageNavbarBrand'>Cegedim CRM</a>
+        <a class='navbar-brand' id='homePageNavbarBrandLink'>Cegedim CRM</a>
         <button class='navbar-toggler' type='button' data-bs-toggle='collapse' data-bs-target='#navbarNavAltMarkup' aria-controls='navbarNavAltMarkup' aria-expanded='false' aria-label='Toggle navigation'>
           <span class='navbar-toggler-icon'></span>
         </button>
@@ -16,7 +17,7 @@ const HeaderComponent = () => {
             <a class='nav-link' id='productListPageNavLink'>Articles</a>
             <a class='nav-link' id='customerListPageNavLink'>Clients</a>
             <a class='nav-link' id='orderListPageNavLink'>Commandes</a>
-            <a class='nav-link' id='invoiceListPageNavLink'>Factures</a>
+            <a class='nav-link' id='invoiceAddPageNavLink'>Nouvelle facture</a>
           </div>
         </div>
       </div>
@@ -26,7 +27,7 @@ const HeaderComponent = () => {
   l'application avec le paramètre souhaité à chaque bouton du composant de fonction HeaderComponent. Ces fonctions sont
   répétées dans différents composants. L'intérêt est de scoper ces fonctions à ce composant de fonction et de ne pas
   propager ces fonctions aux autres composants de fonction. */
-  document.querySelector('#homePageNavbarBrand').addEventListener('click', () => {
+  document.querySelector('#homePageNavbarBrandLink').addEventListener('click', () => {
     setCurrentRoute('home')
   })
 
@@ -46,8 +47,8 @@ const HeaderComponent = () => {
     setCurrentRoute('order-list')
   })
 
-  document.querySelector('#invoiceListPageNavLink').addEventListener('click', () => {
-    setCurrentRoute('invoice-list')
+  document.querySelector('#invoiceAddPageNavLink').addEventListener('click', () => {
+    setCurrentRoute('invoice-add')
   })
 }
 

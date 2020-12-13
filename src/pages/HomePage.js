@@ -1,3 +1,4 @@
+/* Importe certaines actions liées au state global de l'application. */
 import { setCurrentRoute } from '../store/actions/routesActions.js'
 
 const HomePage = () => {
@@ -9,7 +10,6 @@ const HomePage = () => {
     <button class='btn btn-dark m-1' id='productListPageButton'>Voir la liste des articles</button>
     <button class='btn btn-dark m-1' id='customerListPageButton'>Voir la liste des clients</button>
     <button class='btn btn-dark m-1' id='orderListPageButton'>Voir la liste des commandes</button>
-    <button class='btn btn-dark m-1' id='invoiceListPageButton'>Voir la liste des factures</button>
     <button class='btn btn-dark m-1' id='invoiceAddPageButton'>Créer une nouvelle facture</button>
   `
 
@@ -27,10 +27,6 @@ const HomePage = () => {
 
   document.querySelector('#orderListPageButton').addEventListener('click', () => {
     setCurrentRoute('order-list')
-  })
-
-  document.querySelector('#invoiceListPageButton').addEventListener('click', () => {
-    setCurrentRoute('invoice-list')
   })
 
   document.querySelector('#invoiceAddPageButton').addEventListener('click', () => {

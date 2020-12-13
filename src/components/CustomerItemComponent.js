@@ -4,12 +4,12 @@ const CustomerItemComponent = (customer) => {
 
   /* Ajoute au contenu HTML de la div portant l'ID router le contenu suivant : */
   document.querySelector('#router').innerHTML += `
-    <button class='btn btn-dark m-1'>
+    <button class='btn btn-dark m-1' id='customerDetailsNavLink_${ customer.id }'>
       ${ customer.firstName }
       <span class='text-uppercase'>${ customer.lastName }</span>,
       ${ customer.orders.length } commande(s)
     </button>
-  `
+   `
 }
 
 export default CustomerItemComponent

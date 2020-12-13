@@ -1,3 +1,4 @@
+/* Importe certaines actions liées au state global de l'application. */
 import { setCurrentRoute } from '../store/actions/routesActions.js'
 
 /* Contrairement aux composants fonction de type page, celui-ci ne se déclenche que lorsque l'attribut currentRoute du

@@ -5,7 +5,7 @@
       "firstName": "Mario",
       "lastName": "Bros",
       "orders": [
-        "order1"
+        "order0"
       ]
     },
     {
@@ -13,7 +13,7 @@
       "firstName": "Luigi",
       "lastName": "Bros",
       "orders": [
-        "order2"
+        "order1"
       ]
     },
     {
@@ -21,8 +21,8 @@
       "firstName": "Geralt",
       "lastName": "De Riv",
       "orders": [
-        "order3",
-        "order4"
+        "order2",
+        "order3"
       ]
     },
     {
@@ -38,7 +38,14 @@
     {}
   ],
   "orders": [
-    {}
+    {
+      "id": "customer0",
+      "firstName": "Mario",
+      "lastName": "Bros",
+      "orders": [
+        "order0"
+      ]
+    }
   ],
   "products": [
     {}
