@@ -5,9 +5,6 @@ import { setCurrentRoute } from '../store/actions/routesActions.js'
 /* Importe certains composants de fonction dits stateless, ne comportant pas ou peu d'intelligence logicielle. */
 import OrderItemComponent from '../components/OrderItemComponent.js'
 
-/* Importe certains composants de type page. */
-import OrderDetailsPage from './OrderDetailsPage.js'
-
 /* Ces fonctions pourraient être rassemblées et ne passer en paramètres que les attributs souhaités. Cependant, cette
 application a été conçue dans dans le but d'être ce que pourrait être les prémices d'un éventuel CRM. Il est ainsi très
 probable que ces fonctions auraient évolué et auraient nécessité d'avoir leur propre logique, de ce fait, j'ai préféré

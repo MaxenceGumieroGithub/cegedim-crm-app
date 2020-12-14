@@ -10,7 +10,6 @@ const HomePage = () => {
     <button class='btn btn-dark m-1' id='productListPageButton'>Voir la liste des articles</button>
     <button class='btn btn-dark m-1' id='customerListPageButton'>Voir la liste des clients</button>
     <button class='btn btn-dark m-1' id='orderListPageButton'>Voir la liste des commandes</button>
-    <button class='btn btn-dark m-1' id='invoiceAddPageButton'>Créer une nouvelle facture</button>
   `
 
   /* Cette série de fonctions permet d'assigner la fonction setCurrentRoute interagissant avec le state global de
@@ -27,10 +26,6 @@ const HomePage = () => {
 
   document.querySelector('#orderListPageButton').addEventListener('click', () => {
     setCurrentRoute('order-list')
-  })
-
-  document.querySelector('#invoiceAddPageButton').addEventListener('click', () => {
-    setCurrentRoute('invoice-add')
   })
 }
 

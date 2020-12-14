@@ -17,7 +17,6 @@ const HeaderComponent = () => {
             <a class='nav-link' id='productListPageNavLink'>Articles</a>
             <a class='nav-link' id='customerListPageNavLink'>Clients</a>
             <a class='nav-link' id='orderListPageNavLink'>Commandes</a>
-            <a class='nav-link' id='invoiceAddPageNavLink'>Nouvelle facture</a>
           </div>
         </div>
       </div>
@@ -45,10 +44,6 @@ const HeaderComponent = () => {
 
   document.querySelector('#orderListPageNavLink').addEventListener('click', () => {
     setCurrentRoute('order-list')
-  })
-
-  document.querySelector('#invoiceAddPageNavLink').addEventListener('click', () => {
-    setCurrentRoute('invoice-add')
   })
 }
 

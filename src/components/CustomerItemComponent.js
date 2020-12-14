@@ -6,8 +6,7 @@ const CustomerItemComponent = (customer) => {
   document.querySelector('#router').innerHTML += `
     <button class='btn btn-dark m-1' id='customerDetailsNavLink_${ customer.id }'>
       ${ customer.firstName }
-      <span class='text-uppercase'>${ customer.lastName }</span>,
-      ${ customer.orders.length } commande(s)
+      <span class='text-uppercase'>${ customer.lastName }</span>
     </button>
    `
 }

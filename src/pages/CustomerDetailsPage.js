@@ -1,7 +1,7 @@
 /* Importe certaines actions liées au state global de l'application. */
 import { getCustomer } from '../store/actions/customersActions.js'
-import { setCurrentRoute } from '../store/actions/routesActions.js'
 import { getOrdersByCustomer, setOrders, setOrder } from '../store/actions/ordersActions.js'
+import { setCurrentRoute } from '../store/actions/routesActions.js'
 
 /* Importe certains composants de fonction dits stateless, ne comportant pas ou peu d'intelligence logicielle. */
 import OrderItemComponent from '../components/OrderItemComponent.js'

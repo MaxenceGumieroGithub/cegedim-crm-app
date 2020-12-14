@@ -6,7 +6,7 @@ import state from '../index.js'
 
 /* Retourne le contenu de l'attribut orders du state global de l'application. */
 export const getOrders = () => {
-  return [...state.orders]
+  return [...state.orders.sort()]
 }
 
 /* Retourne le contenu de l'attribut order du state global de l'application. */

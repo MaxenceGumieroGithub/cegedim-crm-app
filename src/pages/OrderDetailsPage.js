@@ -6,6 +6,8 @@ import { getProductsByOrder, setProducts } from '../store/actions/productsAction
 import { setCurrentRoute } from '../store/actions/routesActions.js'
 
 const OrderDetailsPage = () => {
+  /* Variable locale initialisée une première fois. */
+  let totalPrice = 0
 
   /* Modifie le contenu des attributs customers et orders du state global de l'application. Cela permet d'avoir
   directement accès aux nouvelles données ajoutées en base de données au chargement de ce composant de fonction. Ce
@@ -17,6 +19,7 @@ const OrderDetailsPage = () => {
         <h1>Détail commande</h1>
         <hr>
         <h2>Commandé le ${ getOrder().date }</h2>
+        <br>
         <p>
           Commandé par : ${ getCustomerByOrder(getOrder()).firstName } 
           <span class='text-uppercase'>${ getCustomerByOrder(getOrder()).lastName }</span>
@@ -26,9 +29,14 @@ const OrderDetailsPage = () => {
       `
       getProductsByOrder(getOrder()).map(product => {
         document.querySelector('#router').innerHTML += `  
-          <p>${ product.name }, ${ product.price }€</p>
+          <p>${ product.name }, ${ product.price }€ TTC</p>
         `
+        totalPrice += product.price
       })
+      document.querySelector('#router').innerHTML += `  
+        <br>
+        <p>Prix total : ${ totalPrice.toFixed(2) }€ TTC</p>
+      `
       document.querySelector('#router').innerHTML += `  
         <hr>
         <button class='btn btn-dark m-1' id='orderListPageButton'>Retour à la liste des commandes</button>

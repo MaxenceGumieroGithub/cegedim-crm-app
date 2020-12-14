@@ -2,8 +2,8 @@
   "customers": [
     {
       "id": "customer0",
-      "firstName": "Mario",
-      "lastName": "Bros",
+      "firstName": "Paul",
+      "lastName": "Mathieu",
       "orders": [
         "order0",
         "order1"
@@ -11,25 +11,58 @@
     },
     {
       "id": "customer1",
-      "firstName": "Luigi",
-      "lastName": "Bros",
+      "firstName": "Élodie",
+      "lastName": "Gardette",
       "orders": [
         "order2"
       ]
     },
     {
       "id": "customer2",
-      "firstName": "Geralt",
-      "lastName": "De Riv",
+      "firstName": "Jérome",
+      "lastName": "Fanton",
+      "orders": [
+        "order6",
+        "order7",
+        "order8"
+      ]
+    },
+    {
+      "id": "customer3",
+      "firstName": "Angèle",
+      "lastName": "Sillière",
+      "orders": []
+    },
+    {
+      "id": "customer4",
+      "firstName": "Nicolas",
+      "lastName": "Rocher",
+      "orders": [
+        "order9",
+        "order10"
+      ]
+    },
+    {
+      "id": "customer5",
+      "firstName": "Sophie",
+      "lastName": "Brunstein",
+      "orders": [
+        "order11"
+      ]
+    },
+    {
+      "id": "customer6",
+      "firstName": "Ronan",
+      "lastName": "Leloup",
       "orders": [
         "order3",
         "order4"
       ]
     },
     {
-      "id": "customer3",
-      "firstName": "Cloud",
-      "lastName": "Strife",
+      "id": "customer7",
+      "firstName": "Chloé",
+      "lastName": "Sorro",
       "orders": [
         "order5"
       ]
@@ -41,100 +74,152 @@
   "orders": [
     {
       "id": "order0",
-      "date": "03/01/2019",
+      "date": "03-01-2019",
       "customer": "customer0",
       "products": [
-        "product0",
-        "product0",
-        "product0",
-        "product0",
-        "product0",
-        "product1"
+        "product0"
       ]
     },
     {
       "id": "order1",
-      "date": "25/03/2019",
+      "date": "25-03-2019",
       "customer": "customer0",
       "products": [
         "product0",
-        "product0",
-        "product0",
-        "product1"
+        "product2",
+        "product4",
+        "product6"
       ]
     },
     {
       "id": "order2",
-      "date": "11/11/2019",
+      "date": "11-11-2019",
       "customer": "customer1",
       "products": [
-        "product2"
+        "product1"
       ]
     },
     {
       "id": "order3",
-      "date": "23/05/2020",
-      "customer": "customer2",
+      "date": "23-05-2020",
+      "customer": "customer6",
       "products": [
         "product3"
       ]
     },
     {
       "id": "order4",
-      "date": "15/08/2020",
-      "customer": "customer2",
+      "date": "15-08-2020",
+      "customer": "customer6",
       "products": [
         "product3",
-        "product4"
+        "product7"
       ]
     },
     {
       "id": "order5",
-      "date": "21/08/2020",
-      "customer": "customer3",
+      "date": "21-08-2020",
+      "customer": "customer7",
       "products": [
-        "product5",
-        "product6",
+        "product2",
+        "product4"
+      ]
+    },
+    {
+      "id": "order6",
+      "date": "30-08-2020",
+      "customer": "customer2",
+      "products": [
+        "product2",
+        "product4"
+      ]
+    },
+    {
+      "id": "order7",
+      "date": "13-09-2020",
+      "customer": "customer2",
+      "products": [
+        "product7"
+      ]
+    },
+    {
+      "id": "order8",
+      "date": "20-09-2020",
+      "customer": "customer2",
+      "products": [
+        "product7",
+        "product7",
+        "product7"
+      ]
+    },
+    {
+      "id": "order9",
+      "date": "01-10-2020",
+      "customer": "customer4",
+      "products": [
         "product6",
         "product6"
+      ]
+    },
+    {
+      "id": "order10",
+      "date": "05-11-2020",
+      "customer": "customer4",
+      "products": [
+        "product7"
+      ]
+    },
+    {
+      "id": "order11",
+      "date": "18-11-2020",
+      "customer": "customer5",
+      "products": [
+        "product1",
+        "product3",
+        "product7"
       ]
     }
   ],
   "products": [
     {
       "id": "product0",
-      "name": "Super champignon",
-      "price": 24.99
+      "name": "AMD Ryzen 9 3900X",
+      "price": 399.99
     },
     {
       "id": "product1",
-      "name": "Étoile",
-      "price": 99999.99
+      "name": "AMD Ryzen 9 5900X",
+      "price": 749.99
     },
     {
       "id": "product2",
-      "name": "Aspirateur Poltergust G/00",
-      "price": 499.99
+      "name": "AMD Radeon RX 580X",
+      "price": 249.99
     },
     {
       "id": "product3",
-      "name": "Épée en argent",
-      "price": 1124.99
+      "name": "AMD Radeon RX 5700 XT",
+      "price": 449.99
     },
     {
       "id": "product4",
-      "name": "Armure Nilfgaardienne",
-      "price": 2449.99
-    },
-    {
-      "id": "product5",
-      "name": "Épée broyeuse",
+      "name": "Intel Core i9 9900K",
       "price": 349.99
     },
     {
+      "id": "product5",
+      "name": "Intel Core i9 10900K",
+      "price": 549.99
+    },
+    {
       "id": "product6",
-      "name": "Queue de phénix",
-      "price": 119.99
+      "name": "Nvidia GeForce RTX 3070",
+      "price": 799.99
+    },
+    {
+      "id": "product7",
+      "name": "Nvidia GeForce RTX 3090",
+      "price": 1999.99
     }
   ]
 }

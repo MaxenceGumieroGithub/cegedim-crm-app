@@ -5,7 +5,6 @@ import { getCurrentRoute } from './store/actions/routesActions.js'
 import HomePage from './pages/HomePage.js'
 import CustomerListPage from './pages/CustomerListPage.js'
 import CustomerDetailsPage from './pages/CustomerDetailsPage.js'
-import InvoiceAddPage from './pages/InvoiceAddPage.js'
 import OrderListPage from './pages/OrderListPage.js'
 import OrderDetailsPage from './pages/OrderDetailsPage.js'
 import ProductListPage from './pages/ProductListPage.js'
@@ -24,8 +23,6 @@ const RouterComponent = () => {
       return CustomerListPage()
     case 'customer-details':
       return CustomerDetailsPage()
-    case 'invoice-add':
-      return InvoiceAddPage()
     case 'order-list':
       return OrderListPage()
     case 'order-details':
