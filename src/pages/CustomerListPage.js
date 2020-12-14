@@ -13,7 +13,7 @@ const CustomerListPage = () => {
 
   /* Modifie le contenu de l'attribut customers du state global de l'application. Cela permet d'avoir directement accès
   aux nouvelles données ajoutées en base de données au chargement de ce composant de fonction. */
-  setCustomers(()=> {
+  setCustomers(() => {
 
     /* Réécrit le contenu HTML de la div portant l'ID router en lui assignant le contenu suivant : */
     document.querySelector('#router').innerHTML = `

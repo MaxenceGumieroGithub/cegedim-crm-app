@@ -14,7 +14,9 @@ probable que ces fonctions auraient évolué et auraient nécessité d'avoir leu
 isoler ces fonctions, quitte à répéter leur logique. */
 const ProductListPage = () => {
 
-  setProducts(()=> {
+  /* Modifie le contenu de l'attribut products du state global de l'application. Cela permet d'avoir directement accès
+  aux nouvelles données ajoutées en base de données au chargement de ce composant de fonction. */
+  setProducts(() => {
     /* Réécrit le contenu HTML de la div portant l'ID router en lui assignant le contenu suivant : */
     document.querySelector('#router').innerHTML = `
       <h1>Liste des articles</h1>    

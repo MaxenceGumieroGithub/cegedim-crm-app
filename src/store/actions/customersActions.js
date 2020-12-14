@@ -14,6 +14,12 @@ export const getCustomer = () => {
   return { ...state.customer }
 }
 
+/* Filtre le contenu de l'attribut customers du state global de l'application et retourne uniquement un tableau d'objets
+clients d'un objet commande passé en paramètre de la fonction. */
+export const getCustomerByOrder = (order) => {
+  return getCustomers().find(customer => customer.id === order.customer)
+}
+
 /* Vérifie le contenu de la base de données au format json contenu à la racine du projet, et assigne le tableau d'objets
 clients à l'attribut customers du state global de l'application. Le paramètre que j'ai ici nommé callback permet de
 lancer une fonction après que le tableau d'objets clients ait été réassigné. */

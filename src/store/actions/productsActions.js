@@ -14,6 +14,17 @@ export const getProduct = () => {
   return { ...state.product }
 }
 
+/* Filtre le contenu de l'attribut orders du state global de l'application et retourne uniquement un tableau d'objets
+commandes d'un objet client passé en paramètre de la fonction. */
+export const getProductsByOrder = (order) => {
+  let products = []
+  order.products.forEach(productId => {
+    const foundProduct = getProducts().find(product => product.id === productId)
+    products.push(foundProduct)
+  })
+  return products
+}
+
 /* Vérifie le contenu de la base de données au format json contenu à la racine du projet, et assigne le tableau d'objets
 articles à l'attribut products du state global de l'application. Le paramètre que j'ai ici nommé callback permet de
 lancer une fonction après que le tableau d'objets articles ait été réassigné. */
