@@ -29,8 +29,8 @@ const ProductListPage = () => {
     `
 
     /* Cette fonction permet d'assigner les fonctions setCurrentRoute et setProduct à chaque bouton du composant de
-    fonction ProductListPage. Ces fonctions sont répétées dans différents composants. Il est nécessaire de faire une
-    seconde boucle pour éviter que la fonction d'ajout d'évènement au clic soit écrasée à chaque nouvelle itération. */
+    fonction ProductListPage. Il est nécessaire de faire une seconde boucle pour éviter que la fonction d'ajout
+    d'évènement au clic soit écrasée à chaque nouvelle itération. */
     getProducts().map(product => {
       document.querySelector(`#productDetailsNavLink_${ product.id }`)
         .addEventListener('click', () => {

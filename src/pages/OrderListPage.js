@@ -29,8 +29,8 @@ const OrderListPage = () => {
     `
 
     /* Cette fonction permet d'assigner les fonctions setCurrentRoute et setOrder à chaque bouton du composant de
-    fonction OrderListPage. Ces fonctions sont répétées dans différents composants. Il est nécessaire de faire une
-    seconde boucle pour éviter que la fonction d'ajout d'évènement au clic soit écrasée à chaque nouvelle itération. */
+    fonction OrderListPage. Il est nécessaire de faire une seconde boucle pour éviter que la fonction d'ajout
+    d'évènement au clic soit écrasée à chaque nouvelle itération. */
     getOrders().map(order => {
       document.querySelector(`#orderDetailsNavLink_${ order.id }`)
         .addEventListener('click', () => {
